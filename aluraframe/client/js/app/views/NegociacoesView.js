@@ -7,7 +7,7 @@ class NegociacoesView {
 
     _template(model) {
         return `
-        <table class="table table-hover table-bordered">
+        <table class="table table table-striped">
             <thead>
                 <tr>
                     <th>DATA</th>
@@ -32,9 +32,9 @@ class NegociacoesView {
 
             <tfoot>
                 <td colspan="3">
-                    <b>Total do Volume</b>
+                    Total do Volume
                 </td>
-                <td class='text-center'>${model.negociacoes.reduce((total, n) => total + n.volume, 0.0)
+                <td>${model.negociacoes.reduce((total, n) => total + n.volume, 0.0)
                 }</td>
                 </tfoot>
                 </table>`;
