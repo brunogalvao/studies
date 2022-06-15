@@ -6,6 +6,10 @@ class ListaNegociacoes {
         this._negociacoes.push(negociacao);
     }
     get negociacoes() {
-        return this._negociacoes;
+
+        return [].concat(this._negociacoes);
+
     }
 }
+
+// Método concat para criar um novo array a partir de um array existente.

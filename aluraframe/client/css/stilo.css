@@ -10,14 +10,14 @@
 
 .text-gradiente {
     background-image:
-        linear-gradient(to bottom, rebeccapurple, steelblue, rebeccapurple);
+        linear-gradient(to bottom, rebeccapurple, steelblue, rgb(30, 199, 225));
     background-clip: text;
     -webkit-background-clip: text;
 
     -webkit-text-fill-color: transparent;
 
     font-weight: 800;
-    /* font-size: 2rem; */
+    font-size: 4rem;
 
     padding-bottom: 2rem;
     padding-top: 2rem;
