@@ -1,0 +1,58 @@
+@import url('./bootstrap.css');
+@import url('./bootstrap-theme.css');
+
+.titulo {
+    background: #f1f1f1;
+}
+
+
+.text-gradiente {
+    background-image:
+        linear-gradient(to bottom, rebeccapurple, steelblue, rebeccapurple);
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    font-weight: 800;
+    font-size: 4rem;
+
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+
+}
+
+.btn-acao {
+    display: flex;
+}
+
+button.btn {
+    border-radius: 4rem;
+    padding: .6rem 1.8rem;
+    margin-left: .8rem;
+}
+
+button.btn:first-child {
+    margin-left: 0;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+}
+
+.btn > svg {
+    margin-right: .6rem;
+}
+
+/* Linha de Serviços */
+.servicos {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0rem 2.8rem;
+}
+
+/* input[id="data"], input[id="quantidade"], input[id="valor"] {
+    width: 220px;
+    margin: 0 auto;
+} */
