@@ -56,6 +56,10 @@ button.btn:first-child {
 .form-control {
     height: 38px;
 }
+.form-group > label{
+    font-size: .82rem;
+    margin-bottom: .5rem;
+}
 
 input[type=date] {
     text-align: center;
