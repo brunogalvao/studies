@@ -34,5 +34,5 @@ Uso de dados back end pelo front end otimizado
 
 
 ## Dica para componentes
-> Quando a informação se repete;
-> A interferencia de informação for redundante;
+>  - Quando a informação se repete;
+>  - A interferencia de informação for redundante;
