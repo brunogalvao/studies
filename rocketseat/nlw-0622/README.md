@@ -8,7 +8,7 @@ CMS = Content Management System
 Traz tanto o painel de Admin tanto quanto a parte de visual do front-end(temas)
 ```
 
-# GraphCMS
+## GraphCMS
 Headles CMS (GraphCMS): Painel de ADMIN (dados fornecidos através de uma API REST ou GraphQL).
 
 ```
@@ -25,7 +25,7 @@ Uso de dados back end pelo front end otimizado
 > **underfeting** - uso de dados de front end para o back end
 
 
-# Chamada e feito com o Apollo
+## Chamada e feito com o Apollo
 ```
 
 "npm i @apollo/client graphql"
