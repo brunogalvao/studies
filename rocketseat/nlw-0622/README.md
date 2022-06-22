@@ -36,3 +36,17 @@ Uso de dados back end pelo front end otimizado
 ## Dica para componentes
 >  - Quando a informação se repete;
 >  - A interferencia de informação for redundante;
+
+## Date-fns
+Para a data e hora foi usado o 'date-fns', que é um pacote que permite trabalhar com datas e horas.
+
+```
+npm i date-fns
+```
+
+## Ícones
+No projeto foi usado a lib 'https://phosphoricons.com' gerando os ícones em svg um componente.
+
+```
+npm i phosphor react
+```

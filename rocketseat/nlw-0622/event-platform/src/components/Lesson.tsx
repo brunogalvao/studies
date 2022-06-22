@@ -36,7 +36,7 @@ export default function Lesson(props: LessonProps) {
                     )}
 
                     <span className="text-xs font-bold rounded py-[0.125rem] px-2 text-white border-green-300 border uppercase">
-                        {props.type === 'live' ? 'AO VIVO' : 'Aula Prática'}
+                        {props.type === 'live' ? 'Ao Vivo' : 'Aula Prática'}
                     </span>
                 </header>
 
