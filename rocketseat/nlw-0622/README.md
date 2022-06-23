@@ -50,3 +50,40 @@ No projeto foi usado a lib 'https://phosphoricons.com' gerando os ícones em svg
 ```
 npm i phosphor react
 ```
+
+## Biblioteca de Player (VimeJS)
+
+Biblioteca de gerenciamento do player de vídeo.
+
+```
+https://vimejs.com
+
+npm - npm i @vime/core @vime/react
+```
+
+Após a instalação e configurando o ID do vídeo, importar o css default do player.
+
+```
+import '@vime/core/themes/default.css';
+```
+
+
+> - Pode usar o **--force** para instalar o pacote.
+> - Tem suporte ao **Vimeo**.
+
+## React Router Dom
+
+Biblioteca para roteamento de rotas.
+
+```
+npm i react-router-dom
+```
+
+# Dica
+
+Grupo de hover no tailwind.
+
+```
+> - Adiciona 'group' onde o hover será ativado;
+> - E 'group-hover' onde o hover fará a mudança;
+```
