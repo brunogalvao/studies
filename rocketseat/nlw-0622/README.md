@@ -45,7 +45,7 @@ npm i date-fns
 ```
 
 ## Ícones
-No projeto foi usado a lib 'https://phosphoricons.com' gerando os ícones em svg um componente.
+No projeto foi usado a lib 'https://phosphoricons.com' os ícones são fornecidos em svg em componente React/Vuejs.
 
 ```
 npm i phosphor react
