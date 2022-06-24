@@ -13,7 +13,7 @@ export default function Evento () {
             <main className="flex flex-1">
                 { slug
                     ? <Video lessonsSlug={slug} />
-                    : <div className="flex-1" />
+                    : <div className="flex flex-1 justify-center items-center">sem vídeo</div>
                 }
                 <Sidebar />
             </main>
