@@ -7,14 +7,38 @@ CMS = Content Management System
 
 Traz tanto o painel de Admin tanto quanto a parte de visual do front-end(temas)
 ```
+## Instalando o React
+Usando o Vites, o React é instalado com o comando:
+
+
+```
+https://vitejs.dev/guide/#scaffolding-your-first-vite-project
+```
+
+## Instalando o Tailwind CSS
+
+```
+npm i tailwindcss postcss autoprefixer -D
+```
+
+Iniciando o Tailwind no projeto e criando o arquivo de configuração em postcss.
+
+```
+npx tailwindcss init -p
+```
 
 ## GraphCMS
+
+CMS = Content Management System.
+
+Traz tanto o painel de Admin tanto quanto a parte de visual do front-end(temas).
+
 Headles CMS (GraphCMS): Painel de ADMIN (dados fornecidos através de uma API REST ou GraphQL).
 
 ```
-> React que consome essa API do CMS
+> - React que consome essa API do CMS
 
-> query / mutation
+> - query / mutation
 ```
 
 - **query** = buscar dados
