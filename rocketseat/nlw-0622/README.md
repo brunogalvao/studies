@@ -111,3 +111,48 @@ Grupo de hover no tailwind.
 > - Adiciona 'group' onde o hover será ativado;
 > - E 'group-hover' onde o hover fará a mudança;
 ```
+
+## Classnames
+
+-- Classnames é uma biblioteca que permite a criação de classes com mudanças de estado mais simples.
+
+
+## GraphQL codegen
+
+Instalando dependências do GraphQL codegen, onde ele irá capturar a tipagem já configurada no GraphCMS.
+
+
+```
+npm i @graphql-codegen/typescript @graphql-codegen/typescript-operations @graphql-codegen/typescript-react-apollo
+```
+
+Instalando o GraphQL codegen no projeto.
+
+```
+npm i @graphql-codegen/cli -D
+```
+
+No arquivo 'codegen.yml' foi configurado o tipo de linguagem que será gerado.
+
+```
+schema: https://api-sa-east-1.graphcms.com/v2/cl4ofw8lq01qb01xkfgry6ieg/master
+
+documents: './src/graphql/*.graphql'
+
+generates:
+  ./src/graphql/generated.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+    config:
+      reactApolloVersion: 3
+      withHooks: true 
+      // onde esse comando nos fornecerá automaticamente os hooks do React usados no projeto.
+```
+
+# Deploy
+
+O deploy será feito na Vercel.
+
+**OBS:** procurar para instalar o CLI github na máquina.
