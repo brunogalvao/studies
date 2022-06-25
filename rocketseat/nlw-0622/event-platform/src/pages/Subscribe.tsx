@@ -2,23 +2,17 @@ import { gql, useMutation } from "@apollo/client";
 import { useState, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
-
-const CREATE_SUBSCRIPTION_MUTATION = gql`
-    mutation CreateSubscriber($name: String!, $email:String!) {
-  createSubscriber(data: {name: $name, email: $email}) {
-    id
-  }
-}
-`
+import { useCreateSubscriberMutation } from "../graphql/generated";
 
 export default function Subscribe() {
 
     const navigate = useNavigate();
+    // hook para pular direto para a página
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
 
-    const [createSubscriber, { loading }] = useMutation(CREATE_SUBSCRIPTION_MUTATION);
+    const [createSubscriber, { loading }] = useCreateSubscriberMutation();
 
     async function handleSubscribe(event: FormEvent) {
         event?.preventDefault();
@@ -31,7 +25,6 @@ export default function Subscribe() {
         })
         navigate('/event');
     }
-
 
     return (
         <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
