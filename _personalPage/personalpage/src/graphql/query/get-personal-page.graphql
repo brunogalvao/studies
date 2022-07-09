@@ -1,0 +1,19 @@
+query QueryPersonalPage {
+  pessoals {
+    nome
+    linkedin
+    id
+    eMail
+    gitHub
+    twitter
+    celular
+    photo {
+      fileName
+      url
+    }
+    dataNascimento
+    descricaoBio {
+      text
+    }
+  }
+}

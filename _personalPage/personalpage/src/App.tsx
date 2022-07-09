@@ -1,93 +1,72 @@
-import { gql, useQuery } from "@apollo/client"
-// import { useEffect } from "react"
-// import { client } from "./lib/apollo"
+import { useQueryPersonalPageQuery } from "./graphql/generated"
 
-import { Envelope, GithubLogo, LinkedinLogo, Phone, TwitterLogo, UserCircle } from "phosphor-react";
+import { Envelope, Gif, Gift, GithubLogo, LinkedinLogo, Phone, TwitterLogo } from "phosphor-react";
 
-const QUERY = gql`
-  query QueryPersonalPage {
-  pessoals {
-    nome
-    linkedin
-    id
-    eMail
-    gitHub
-    twitter
-    celular
-  }
-}
-`
+export default function App() {
 
+  const { data } = useQueryPersonalPageQuery();
 
-
-interface Pessoal {
-  nome: string,
-  id: string,
-  linkedin: string,
-  eMail: string,
-  gitHub: string,
-  celular: string,
-  twitter: string
-}
-
-function App() {
-
-  const { data } = useQuery<{ pessoals: Pessoal[] }>(QUERY)
-
-  console.log(data?.pessoals[0].celular) 
+  console.log(data?.pessoals);
 
   return (
     <div>
+
       <h1 className="font-thin text-5xl m-8 text-center">{data?.pessoals[0].nome}</h1>
 
       {data?.pessoals.map(pessoal => (
-        <ul className="mx-8 gap-4 border-b-2 pb-4" key={pessoal.id}>
+        <ul
+          className="mx-8 gap-4 border-b-2 pb-4"
+          key={pessoal.id}>
           <li className="flex items-center">
-            <UserCircle
+            <img
+              className="w-10 h-10 mr-2 rounded-full border-2 border-orange-500"
+              src={pessoal.photo?.url} />
+            {pessoal.nome}
+          </li>
+
+          <li className="flex items-center">
+            <Gift
               size={40}
               weight="fill"
-              className="mr-2"
+              className="text-orange-500"
             />
-            {pessoal.nome}
+            {pessoal.dataNascimento}
           </li>
 
           <li className="flex items-center">
             <Envelope
               size={40}
               weight="fill"
-              className="mr-2" />
+              className="mr-2 text-orange-500" />
             {pessoal.eMail}
           </li>
 
           <li className="flex items-center">
-            <Phone size={40} weight="fill" />
+            <Phone size={40} weight="fill" className="text-orange-500"/>
             {pessoal.celular}
           </li>
 
           <li className="flex items-center">
             <a href={"https://www.linkedin.com/in/" + pessoal.linkedin} target="_blank">
-              <LinkedinLogo size={40} weight="fill" />
+              <LinkedinLogo size={40} weight="fill" className="text-orange-500"/>
             </a>
 
             <a href={"https://github.com/" + pessoal.gitHub} target="_blank">
-              <GithubLogo size={40} weight="fill" />
+              <GithubLogo size={40} weight="fill" className="text-orange-500"/>
             </a>
 
             <a href={"https://twitter.com/" + pessoal.twitter} target="_blank">
-              <TwitterLogo size={40} weight="fill" />
+              <TwitterLogo size={40} weight="fill" className="text-orange-500"/>
             </a>
+          </li>
+
+          <li className="mt-4 mb-4">
+            {pessoal.descricaoBio?.text}
           </li>
         </ul>
       ))}
-
-      {/* <span className="flex">
-        <LinkedinLogo size={40} weight="fill" />
-        {data?.pessoals[0].linkedin}
-      </span> */}
 
     </div>
   )
 
 }
-
-export default App
