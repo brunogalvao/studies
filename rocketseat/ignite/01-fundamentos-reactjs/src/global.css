@@ -33,3 +33,16 @@ button {
     font-weight: 400;
     font-size: 1rem;
 }
+
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
