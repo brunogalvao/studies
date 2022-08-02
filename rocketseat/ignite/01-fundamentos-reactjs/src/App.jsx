@@ -1,7 +1,10 @@
 import { useEffect } from "react";
 import Header from "./components/Header";
 import Post from "./components/Post";
+import Sidebar from "./components/Sidebar";
+
 import './global.css';
+import styles from './App.module.css';
 
 export default function App() {
 
@@ -10,21 +13,20 @@ export default function App() {
 
       <Header />
 
-      <h1>Clean Template</h1>
+      <div className={styles.wrapper}>
 
-      <Post
-        autor="Bruno Galvão"
-        index={1}
-        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vitae sint, ab aut provident consequatur, illum, cupiditate ipsa reiciendis porro quisquam eligendi dolore sapiente facere aliquid voluptatibus enim commodi soluta?"
-      />
+        <Sidebar />
 
-      <Post
-        autor="Eduardo Galvão"
-        index={2}
-        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vitae sint, ab aut provident consequatur, illum, cupiditate ipsa reiciendis porro quisquam eligendi dolore sapiente facere aliquid voluptatibus enim commodi soluta?"
-      />
+        <main>
+
+          <Post />
+
+        </main>
+
+      </div>
 
     </div>
   )
 
 }
+

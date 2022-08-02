@@ -1,16 +1,11 @@
 import styles from './Header.module.css';
+import igniteLogo from '../assets/ignite-logo.svg';
 
 export default function Header() {
     return (
         <header className={styles.header}>
 
-            <div className='d-flex flex-column text-center'>
-                
-                <p>Ignite Feed</p>
-
-                <small>estudo sobre React</small>
-                
-            </div>
+            <img src={igniteLogo} alt="Logo tipo do Ignite"/>
 
         </header>
     )
