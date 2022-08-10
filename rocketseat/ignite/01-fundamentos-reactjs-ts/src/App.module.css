@@ -1,0 +1,37 @@
+.wrapper {
+    max-width: 70rem;
+    margin: 2rem auto;
+
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    gap: 2rem;
+
+    align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%;
+    }
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 
+
+Proporção para o mobile
+
+Sempre no mobile usar em percentual o tamanho relativo da
+font size para alterar proporcionalmente o (REM medida relativa).
+
+16 => 100%      (Desktop)
+14 => x         (Mobile)
+
+Percentual Mobile
+
+87.5%
+
+*/
