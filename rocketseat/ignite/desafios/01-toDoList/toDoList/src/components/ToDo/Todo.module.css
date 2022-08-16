@@ -1,0 +1,74 @@
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.main + .main {
+    margin-top: 1rem;
+}
+
+.content {
+    width: 736px;
+    height: auto;
+    min-height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    background: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    border-radius: 8px;
+}
+
+.content > .text {
+    font-size: .875rem;
+    color: var(--gray-100);
+
+    flex: 1;
+    display: flex;
+    text-align: left;
+    margin: 0 10px;
+}
+
+.content > button {
+    background: transparent;
+    border: none;
+    color: var(--gray-300);
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+}
+
+.content > button:hover {
+    color: var(--danger);
+}
+
+/* mudando estilo do checkbox */
+input[type=checkbox] {
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	-o-appearance:none;
+	outline: none;
+	content: none;	
+}
+
+input[type=checkbox]:before {
+	font-family: "FontAwesome";
+    content: "\f00c";
+    font-size: 15px;
+    color: transparent;
+    background: transparent;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+input[type=checkbox]:checked:before {
+    color: var(--gray-100);
+    background: var(--purple-dark);
+    border: 2px solid var(--purple-dark);
+}

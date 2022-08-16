@@ -1,0 +1,88 @@
+.input {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    margin-top: -2.32rem;
+}
+
+.input > input {
+    width: 638px;
+    height: 54px;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: var(--gray-100);
+    
+    font-size: 1rem;
+    margin-right: 8px;
+    
+    border-radius: 8px;
+    border: 1px solid var(--gray-700);
+
+    background: var(--gray-500);
+}
+
+.input button {
+    width: 90px;
+    height: 54px;
+
+    border-radius: 8px;
+    border: 0px;
+
+    background: var(--blue-dark);
+    color: var(--gray-100);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input button span {
+    font-weight: bold;
+    font-size: .875rem;
+    margin-right: 10px;
+}
+
+.control {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 24px;
+    padding-top: 64px;
+}
+
+.counts {
+    width: 736px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.create {
+    color: var(--blue);
+
+    font-size: .875rem;
+    font-weight: bold;
+}
+
+.completed {
+    color: var(--purple);
+    font-size: .875rem;
+    font-weight: bold;
+}
+
+.create span,
+.completed span {
+    margin-left: 10px;
+
+    background: var(--gray-400);
+    border-radius: 1rem;
+    padding: 0px 8px;
+    color: var(--gray-200);
+}
+

@@ -1,10 +1,34 @@
+import { set } from 'date-fns';
 import { ThumbsUp, Trash } from 'phosphor-react';
+import { useState } from 'react';
+import Avatar from './Avatar';
+
 import styles from './Comment.module.css';
 
-export default function Comment() {
+export default function Comment({content, onDeleteComment}) {
+
+    const [ likeCount, setLikeCount ] = useState(0);
+
+    function handleDeleteComment() {
+        // console.log('delete comment')
+
+        onDeleteComment(content);
+    }
+
+    function handleLikeComment () {
+        setLikeCount((state) => {
+            return state + 1;
+        });
+    }
+
     return (
         <div className={styles.comment}>
-            <img src="https://github.com/brunogalvao.png" alt="" />
+
+            <Avatar
+                hasBorder={false}
+                src="https://github.com/diego3g.png"
+                text="Imagem de Avatar"
+            />
 
             <div className={styles.commentBox}>
                 <div className={styles.commentContent}>
@@ -16,18 +40,21 @@ export default function Comment() {
                                 dateTime="2022-26-07 16:43:00">Cerca de 1h atrás</time>
                         </div>
 
-                        <button title='Deletar Comentário'>
-                            <Trash size={24}/>
+                        <button
+                            onClick={handleDeleteComment}
+                            title='Deletar Comentário'>
+                            <Trash size={24} />
                         </button>
                     </header>
 
-                    <p>Muito bom Devon, parabéns!! 👏👏</p>
+                    <p>{content}</p>
+                    
                 </div>
 
                 <footer>
-                    <button>
+                    <button onClick={handleLikeComment}>
                         <ThumbsUp />
-                        Aplaudir <span>20</span>
+                        Aplaudir <span>{likeCount}</span>
                     </button>
                 </footer>
             </div>
