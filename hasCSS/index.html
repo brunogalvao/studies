@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hasCSS</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+
+<body>
+    
+    <!-- Browser não suportado -->
+    <div class="wrapper">
+        <div class="alert">
+            <p>Your browser doesn't support CSS :has. Please view it in Safari 15.4 or the latest Chrome Canary.</p>
+        </div>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+        <label for="">Select theme</label>
+        <select name="" id="themeSwitcher">
+            <option value="default">Default</option>
+            <option value="blueish">blueish</option>
+        </select>
+    </div>
+
+    <header>
+        <a class="logo" href="#">Logo</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </header>
+
+    <div class="prose">
+        <h1 style="font-size: 2rem; font-weight: bold;">This is a basic title just for the sake of testing</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit ducimus cu!</p>
+
+        <h2>Sub title in there</h2>
+        <p>CSS :has is cool, isn't it?</p>
+    </div>
+
+</body>
+
+</html>

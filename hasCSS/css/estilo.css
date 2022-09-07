@@ -1,0 +1,101 @@
+:root {
+  --color-1: #74559c;
+  --color-2: #f9f6fe;
+}
+
+html:has(option[value=default]:checked) {
+  --color-1: #74559c;
+  --color-2: #f9f6fe;
+}
+
+html:has(option[value=blueish]:checked) {
+  --color-1: #466ec0;
+  --color-2: #ebf0f7;
+}
+
+h1 {
+  color: var(--color-1);
+  margin-bottom: 2rem;
+}
+
+body {
+  border-top: solid 10px var(--color-1);
+  background-color: var(--color-2);
+  min-height: 100vh;
+}
+
+.prose > * + * {
+  margin-top: 1rem;
+}
+.prose h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--color-1);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-1);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+header .logo {
+  font-weight: bold;
+  font-size: 1rem;
+}
+header ul {
+  display: flex;
+  gap: 1rem;
+}
+header ul li {
+  list-style: none;
+}
+
+/* Other styles */
+.alert {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  background-color: #ffeeee;
+  border: 1px solid red;
+  border-radius: 5px;
+  font-size: 0.75rem;
+}
+
+@supports selector(:has(*)) {
+  .alert {
+    display: none;
+  }
+}
+body {
+  font-family: "system-ui";
+  padding: 1rem;
+}
+
+.eg > * + * {
+  margin-top: 2rem;
+}
+
+.wrapper {
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}/*# sourceMappingURL=estilo.css.map */
