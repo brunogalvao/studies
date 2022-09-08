@@ -14,6 +14,7 @@ https://cursos.alura.com.br/course/javascript-es6-orientacao-a-objetos-parte-1/t
 
 
 Exemplo:
+
 ```
     <td>
     ${model.negociacoes.reduce(function(total, n){
@@ -24,7 +25,13 @@ Exemplo:
 
 # Criando um Repositório no Git
 
-Usando o gh cli (https://cli.github.com/manual/) instalado com o homebrew (brew install gh).
+Usando o **ghCLI** (https://cli.github.com/manual/) instalado com o homebrew.
+
+comando para instalar o **ghCLI** com homebrew.
+
+```
+brew install gh
+```
 
 Após a instalação do Git CLI, configure sua conta seguindo os passos fornecidos pelo GetStart.
 
