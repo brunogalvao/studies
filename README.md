@@ -43,3 +43,11 @@ https://cli.github.com/manual/gh_repo_create
 ```
 gh create gh-teste --public
 ```
+
+## Tirando o arquivo .DS_Store do repositório.
+
+Esse comando irá retirar o arquivo .DS_Store do repositorio, caso ele tenha sido comitado.
+
+```
+find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
+```
