@@ -43,7 +43,7 @@ para visualizar qual branch está atualmente ou todas as branches.
 
 > **git merge "nome da branch"**
 
-### Criando Repositório com o GitCLI
+### Create Repositório com o **GitCLI**
 
 Link da [Documentação GitCLI](https://cli.github.com/manual/gh_repo_create)
 
