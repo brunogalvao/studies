@@ -42,3 +42,9 @@ para visualizar qual branch está atualmente ou todas as branches.
 ### Fazendo merge:
 
 > **git merge "nome da branch"**
+
+### Criando Repositório com o GitCLI
+
+```
+gh repo create <nomedoProjeto> —public**
+```
