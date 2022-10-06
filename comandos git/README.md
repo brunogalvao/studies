@@ -51,3 +51,48 @@ Link da [Documentação GitCLI](https://cli.github.com/manual/gh_repo_create)
 ```
 gh repo create <nomedoProjeto> —public
 ```
+
+### Criando gitignore
+
+```
+$ touch .gitignore
+```
+
+## Modelo de gitignore
+
+```
+#Logs
+logs
+.logs
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+pnp-debug.log*
+lerna-debug.log*
+
+node_modules/
+dist
+dist-ssr
+*.local
+
+# Ignore todos os arquivos de texto
+*.txt
+
+# Ignore arquivos relacionados às chaves de API
+.env
+.env.local
+
+# Ignore arquivos de configuração de SASS
+.sass-cache
+
+# Ignore arquivo do VsCode
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_store
+*.suo
+*.ntjsproj
+*.sln
+*.sw?
+
+```
