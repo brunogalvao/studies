@@ -47,6 +47,13 @@ para visualizar qual branch está atualmente ou todas as branches.
 
 Link da [Documentação GitCLI](https://cli.github.com/manual/gh_repo_create)
 
+Autenticando com o gitHub
+
+```
+gh auth login
+```
+
+Assim que for autenticado e autorizado, você pode criar o repositório com o comando:
 
 ```
 gh repo create <nomedoProjeto> —public
