@@ -103,3 +103,15 @@ dist-ssr
 *.sw?
 
 ```
+
+## Comandos VIM no terminal
+
+Alguns comandos do VIM no terminal.
+
+```
+:q	sai do vim
+:q!	sai do vim sem salvar
+:wq	grava as alterações realizas e sai
+:x	grava as alterações e sai
+:qa	para sair de todas as edições em curso
+```
