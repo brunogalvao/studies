@@ -41,7 +41,7 @@ Link da Documentação:
 https://cli.github.com/manual/gh_repo_create
 
 ```
-gh create gh-teste --public
+gh repo create nome-do-repo --public
 ```
 
 ## Tirando o arquivo .DS_Store do repositório.
